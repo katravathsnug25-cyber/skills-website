@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katravath Santosh Naik | AI/ML Developer</title>
+  <meta name="description" content="Portfolio and technical skills of Katravath Santosh Naik — AI/ML developer from NIT Silchar." />
+  <meta name="theme-color" content="#0a0e1a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">Katravath <span>Santosh</span>Naik</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <span class="hero-badge">AI/ML Developer &middot; B.Tech Electrical Engineering, NIT Silchar</span>
+      <h1>Katravath Santosh <span class="grad">Naik</span></h1>
+      <p class="hero-sub">I design, train, and ship intelligent systems — from neural networks to production-grade AI agents — turning data into decisions.</p>
+      <div class="hero-actions">
+        <a href="#skills" class="btn btn-primary">Explore Skills</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">7</span><span class="stat-label">Skill Categories</span></div>
+        <div class="stat"><span class="stat-num">36</span><span class="stat-label">Technologies</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">AI Projects</span></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">NIT Silchar</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">What I work with</span>
+          <h2>Technical Skills</h2>
+          <p>Seven deep, production-oriented domains of AI/ML engineering — languages, machine learning, generative AI, NLP &amp; vision, data science, backend tooling, and core computer science.</p>
+        </div>
+
+        <div class="filters" id="categoryFilters" role="group" aria-label="Filter skills by category"></div>
+
+        <div class="search-box">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="skillSearch" placeholder="Search skills — e.g. Python, RAG, PyTorch..." aria-label="Search skills" autocomplete="off" />
+        </div>
+
+        <div id="skillsGrid" class="skills-grid"></div>
+        <p id="noResults" class="no-results" hidden>No skills matched your search. Try a different keyword.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Selected work</span>
+          <h2>Featured Projects</h2>
+          <p>Flagship AI systems I designed and built — from deep learning platforms to conversational AI.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">&#129600;</div>
+              <span class="project-badge">Deep Learning</span>
+            </div>
+            <h3>MasterMax</h3>
+            <p>A modular deep learning platform for designing, training, and evaluating large-scale neural network systems.</p>
+            <div class="tags"><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>MLOps</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">&#128640;</div>
+              <span class="project-badge">Generative AI</span>
+            </div>
+            <h3>MultiSuper</h3>
+            <p>An ensemble of specialized generative AI models that collaborate to solve complex, multi-step AI problems.</p>
+            <div class="tags"><span>Generative AI</span><span>LLMs</span><span>Ensemble</span><span>Vector DBs</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">&#128172;</div>
+              <span class="project-badge">LLM / RAG</span>
+            </div>
+            <h3>AI-Powered Chatbot</h3>
+            <p>A retrieval-augmented conversational AI that grounds intelligent responses in enterprise knowledge.</p>
+            <div class="tags"><span>LLMs</span><span>RAG</span><span>FastAPI</span><span>Embeddings</span><span>Vector DBs</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2>Let&#8217;s build something intelligent.</h2>
+      <p>Open to AI/ML internships, collaborations, and full-time opportunities.</p>
+      <a class="btn btn-primary" href="mailto:hello@katravath.dev">Get in Touch</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
