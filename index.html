@@ -41,8 +41,18 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
     </button>
 
-    <div class="drawer-top">
-      <div class="avatar">KS</div>
+    <!-- NEW: Custom SVG monogram logo -->
+    <div class="drawer-logo">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ksGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4f46e5"/>
+            <stop offset="100%" stop-color="#0891b2"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="64" height="64" rx="16" fill="url(#ksGrad)"/>
+        <text x="32" y="44" text-anchor="middle" font-size="30" font-family="Space Grotesk, Arial" font-weight="700" fill="white">KS</text>
+      </svg>
       <h2>Katravath Santosh Naik</h2>
       <p class="drawer-role">AI/ML Developer &middot; B.Tech Electrical Engineering, NIT Silchar</p>
       <a class="drawer-github" href="https://github.com/katravathsnug25-cyber" target="_blank" rel="noopener">
@@ -51,20 +61,46 @@
       </a>
     </div>
 
+    <!-- NEW: Direct Quick Links as cards -->
     <div class="drawer-group">
       <span class="drawer-label">Quick Jump</span>
-      <a class="drawer-link" href="#home">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
-        Home
-      </a>
-      <a class="drawer-link" href="#skills">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-        Skills
-      </a>
+
       <a class="drawer-link" href="#projects">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         Projects
       </a>
+
+      <a class="drawer-link" href="#skills">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Skills
+      </a>
+
+      <!-- NEW: Certificates link -->
+      <a class="drawer-link" href="#certificates">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7z"/><path d="M9 11l2 2 4-4"/></svg>
+        Certificates
+      </a>
+
+      <a class="drawer-link" href="#resume" data-resume="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
+        Resume
+      </a>
+
+      <a class="drawer-link" href="tel:+919282699686">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 0 7h.18"/><path d="M16 2s5 6 5 11 0 10-5 10-5-4-5-10-5-10-5-10S6 16 6 22"/></svg>
+        Phone
+      </a>
+
+      <a class="drawer-link" href="mailto:naikkatravathsantosh@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+
+      <a class="drawer-link" href="https://github.com/katravathsnug25-cyber" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        GitHub
+      </a>
+
       <a class="drawer-link" href="#contact">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
         Contact
@@ -101,8 +137,8 @@
           <h1>Katravath Santosh <span class="grad">Naik</span></h1>
           <p class="hero-sub">AI/ML Developer building neural networks, RAG systems and production-grade AI agents — turning data into decisions.</p>
           <div class="hero-actions">
-            <a href="#skills" class="btn btn-primary">Explore Skills</a>
-            <a href="#projects" class="btn btn-soft">View Projects</a>
+            <a href="#skills" class="btn btn-primary" id="exploreSkillsBtn">Explore Skills</a>
+            <a href="#projects" class="btn btn-soft" id="viewProjectsBtn">View Projects</a>
           </div>
           <div class="stats">
             <div class="stat"><b>7</b><span>Categories</span></div>
@@ -136,6 +172,28 @@
       </div>
     </section>
 
+    <!-- ===== Resume ===== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Quick View</span>
+          <h2>Resume</h2>
+          <p>View a concise summary of my background, projects, skills, and credentials.</p>
+        </div>
+        <div class="resume-card" role="button" tabindex="0" data-resume="true" aria-label="Open full resume">
+          <div class="resume-card-avatar">KS</div>
+          <div class="resume-card-info">
+            <h3>Katravath Santosh Naik</h3>
+            <p class="resume-card-role">AI/ML Developer · B.Tech Electrical Engineering, NIT Silchar</p>
+            <p class="resume-card-summary">Building Multi Super Boot / MultiSuper, MasterMax, and AI-Powered Chatbot. 7 skill categories, 36 skills, and 6 AI/ML credentials.</p>
+          </div>
+          <span class="resume-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Projects ===== -->
     <section id="projects" class="section section-soft">
       <div class="container">
@@ -146,60 +204,22 @@
         </div>
 
         <div class="projects" id="projectsList">
-          <article class="proj">
-            <button class="proj-head" type="button" aria-expanded="false">
-              <span class="proj-art" style="color:#4f46e5;background:rgba(79,70,229,.12)">
-                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="7" r="3"/><circle cx="8" cy="25" r="3"/><circle cx="24" cy="25" r="3"/><line x1="16" y1="7" x2="8" y2="25"/><line x1="16" y1="7" x2="24" y2="25"/><line x1="8" y1="25" x2="24" y2="25"/></svg>
-              </span>
-              <span class="proj-headtext">
-                <span class="proj-title">MasterMax</span>
-                <span class="proj-badge" style="color:#4f46e5;background:rgba(79,70,229,.1)">Deep Learning</span>
-              </span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="proj-body"><div class="proj-inner">
-              <p class="proj-desc">A modular deep learning platform for designing, training, and evaluating large-scale neural network systems.</p>
-              <div class="tags"><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>MLOps</span></div>
-            </div></div>
-          </article>
+          <!-- Projects will be rendered by app.js -->
+        </div>
+      </div>
+    </section>
 
-          <article class="proj">
-            <button class="proj-head" type="button" aria-expanded="false">
-              <span class="proj-art" style="color:#d97706;background:rgba(217,119,6,.12)">
-                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l2.4 6.6L24 14l-6.6 2.4L15 23l-2.4-6.6L6 14l6.6-2.4z"/><path d="M24 22l1 2.6 2.6 1-2.6 1-1 2.6-1-2.6-2.6-1 2.6-1z"/></svg>
-              </span>
-              <span class="proj-headtext">
-                <span class="proj-title">MultiSuper</span>
-                <span class="proj-badge" style="color:#d97706;background:rgba(217,119,6,.1)">Generative AI</span>
-              </span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="proj-body"><div class="proj-inner">
-              <p class="proj-desc">An ensemble of specialized generative AI models that collaborate to solve complex, multi-step AI problems.</p>
-              <div class="tags"><span>Generative AI</span><span>LLMs</span><span>Ensemble</span><span>Vector DBs</span></div>
-              <a class="proj-link" href="https://katravathsnug25-cyber.github.io/multisuper-chatbot/" target="_blank" rel="noopener">
-                Live Demo
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
-              </a>
-            </div></div>
-          </article>
+    <!-- NEW: ===== Certificates & Credentials Section ===== -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Learning &amp; Growth</span>
+          <h2>Certificates &amp; Credentials</h2>
+          <p>Professional certifications and courses completed.</p>
+        </div>
 
-          <article class="proj">
-            <button class="proj-head" type="button" aria-expanded="false">
-              <span class="proj-art" style="color:#0891b2;background:rgba(8,145,178,.12)">
-                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M27 15.5A10.5 10.5 0 0 1 16.5 26c-1.7 0-3.3-.4-4.7-1.1L5 26l1.3-6.1A10.5 10.5 0 1 1 27 15.5z"/></svg>
-              </span>
-              <span class="proj-headtext">
-                <span class="proj-title">AI-Powered Chatbot</span>
-                <span class="proj-badge" style="color:#0891b2;background:rgba(8,145,178,.1)">LLM / RAG</span>
-              </span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="proj-body"><div class="proj-inner">
-              <p class="proj-desc">A retrieval-augmented conversational AI that grounds intelligent responses in enterprise knowledge.</p>
-              <div class="tags"><span>LLMs</span><span>RAG</span><span>FastAPI</span><span>Embeddings</span><span>Vector DBs</span></div>
-            </div></div>
-          </article>
+        <div class="cert-grid" id="certificatesGrid">
+          <!-- Certificates will be rendered by app.js -->
         </div>
       </div>
     </section>
@@ -210,7 +230,31 @@
         <div class="contact-card">
           <h2>Let&rsquo;s build something intelligent.</h2>
           <p>Open to AI/ML internships, collaborations, and full-time opportunities.</p>
-          <a class="btn btn-primary" href="mailto:hello@katravath.dev">Get in Touch</a>
+
+          <!-- NEW: Direct email action buttons -->
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:naikkatravathsantosh@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email Me
+            </a>
+            <button class="btn btn-soft" id="copyEmailBtn" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Email
+            </button>
+          </div>
+
+          <!-- NEW: Phone action buttons -->
+          <div class="contact-actions contact-actions-phone">
+            <a class="btn btn-soft" href="tel:+919282699686">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 0 7h.18"/><path d="M16 2s5 6 5 11 0 10-5 10-5-4-5-10-5-10-5-10S6 16 6 22"/></svg>
+              Call
+            </a>
+            <button class="btn btn-soft" id="copyPhoneBtn" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Phone
+            </button>
+          </div>
+
           <div class="contact-links">
             <a href="https://github.com/katravathsnug25-cyber" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
