@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Katravath Santosh Naik | AI/ML Developer</title>
   <meta name="description" content="Portfolio and technical skills of Katravath Santosh Naik — AI/ML developer from NIT Silchar." />
-  <meta name="theme-color" content="#0a0e1a" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f46e5'/%3E%3Cstop offset='1' stop-color='%230891b2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -14,107 +14,239 @@
 </head>
 <body>
 
-  <nav class="navbar" id="navbar" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="#home" class="brand">Katravath <span>Santosh</span>Naik</a>
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <!-- ===== Top white app header ===== -->
+  <header class="app-header" id="appHeader">
+    <div class="container">
+      <div class="header-row">
+        <button class="icon-btn" id="menuBtn" aria-label="Open profile menu" aria-expanded="false" aria-controls="drawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+        <div class="header-brand">AI/ML <span>Portfolio</span></div>
+        <a class="icon-btn" href="https://github.com/katravathsnug25-cyber" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <header class="hero" id="home">
-    <div class="container hero-inner">
-      <span class="hero-badge">AI/ML Developer &middot; B.Tech Electrical Engineering, NIT Silchar</span>
-      <h1>Katravath Santosh <span class="grad">Naik</span></h1>
-      <p class="hero-sub">I design, train, and ship intelligent systems — from neural networks to production-grade AI agents — turning data into decisions.</p>
-      <div class="hero-actions">
-        <a href="#skills" class="btn btn-primary">Explore Skills</a>
-        <a href="#projects" class="btn btn-ghost">View Projects</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">7</span><span class="stat-label">Skill Categories</span></div>
-        <div class="stat"><span class="stat-num">36</span><span class="stat-label">Technologies</span></div>
-        <div class="stat"><span class="stat-num">3</span><span class="stat-label">AI Projects</span></div>
-        <div class="stat"><span class="stat-num">1</span><span class="stat-label">NIT Silchar</span></div>
+      <div class="header-search">
+        <svg class="search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="skillSearch" placeholder="Search 36 skills — Python, RAG, PyTorch…" aria-label="Search skills" autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search" hidden>&times;</button>
       </div>
     </div>
   </header>
 
+  <!-- ===== Slide-out profile drawer ===== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Profile menu">
+    <button class="icon-btn drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+
+    <div class="drawer-top">
+      <div class="avatar">KS</div>
+      <h2>Katravath Santosh Naik</h2>
+      <p class="drawer-role">AI/ML Developer &middot; B.Tech Electrical Engineering, NIT Silchar</p>
+      <a class="drawer-github" href="https://github.com/katravathsnug25-cyber" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        github.com/katravathsnug25-cyber
+      </a>
+    </div>
+
+    <div class="drawer-group">
+      <span class="drawer-label">Quick Jump</span>
+      <a class="drawer-link" href="#home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+        Home
+      </a>
+      <a class="drawer-link" href="#skills">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Skills
+      </a>
+      <a class="drawer-link" href="#projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        Projects
+      </a>
+      <a class="drawer-link" href="#contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Contact
+      </a>
+    </div>
+
+    <div class="drawer-group">
+      <span class="drawer-label">About</span>
+      <details class="info-row">
+        <summary>Education <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="info-body">B.Tech in Electrical Engineering at NIT Silchar, focused on applied AI/ML systems.</div>
+      </details>
+      <details class="info-row">
+        <summary>Focus Areas <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="info-body">Machine Learning, Generative AI, NLP &amp; Vision, data science, and MLOps engineering.</div>
+      </details>
+      <details class="info-row">
+        <summary>Featured Projects <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="info-body">MasterMax, MultiSuper, and the AI-Powered Chatbot.</div>
+      </details>
+      <details class="info-row">
+        <summary>Contact <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <div class="info-body"><a href="mailto:hello@katravath.dev">hello@katravath.dev</a></div>
+      </details>
+    </div>
+  </aside>
+
   <main>
-    <section class="section" id="skills">
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero-section">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">What I work with</span>
-          <h2>Technical Skills</h2>
-          <p>Seven deep, production-oriented domains of AI/ML engineering — languages, machine learning, generative AI, NLP &amp; vision, data science, backend tooling, and core computer science.</p>
+        <div class="hero-card">
+          <span class="pill">Open to AI/ML roles</span>
+          <h1>Katravath Santosh <span class="grad">Naik</span></h1>
+          <p class="hero-sub">AI/ML Developer building neural networks, RAG systems and production-grade AI agents — turning data into decisions.</p>
+          <div class="hero-actions">
+            <a href="#skills" class="btn btn-primary">Explore Skills</a>
+            <a href="#projects" class="btn btn-soft">View Projects</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>7</b><span>Categories</span></div>
+            <div class="stat"><b>36</b><span>Skills</span></div>
+            <div class="stat"><b>3</b><span>Projects</span></div>
+            <div class="stat"><b>NIT</b><span>Silchar</span></div>
+          </div>
         </div>
-
-        <div class="filters" id="categoryFilters" role="group" aria-label="Filter skills by category"></div>
-
-        <div class="search-box">
-          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="skillSearch" placeholder="Search skills — e.g. Python, RAG, PyTorch..." aria-label="Search skills" autocomplete="off" />
-        </div>
-
-        <div id="skillsGrid" class="skills-grid"></div>
-        <p id="noResults" class="no-results" hidden>No skills matched your search. Try a different keyword.</p>
       </div>
     </section>
 
-    <section class="section section-alt" id="projects">
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">Selected work</span>
-          <h2>Featured Projects</h2>
-          <p>Flagship AI systems I designed and built — from deep learning platforms to conversational AI.</p>
+          <span class="eyebrow">What I work with</span>
+          <h2>Technical Skills</h2>
+          <p>Tap a category icon or tile to focus its skills — or browse everything below.</p>
         </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon" aria-hidden="true">&#129600;</div>
-              <span class="project-badge">Deep Learning</span>
-            </div>
-            <h3>MasterMax</h3>
-            <p>A modular deep learning platform for designing, training, and evaluating large-scale neural network systems.</p>
-            <div class="tags"><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>MLOps</span></div>
+
+        <div class="strip" id="categoryStrip" role="tablist" aria-label="Category icon strip"></div>
+
+        <div class="tile-grid" id="categoryGrid"></div>
+
+        <div class="acc-toolbar">
+          <h3>All Skills</h3>
+          <button class="all-btn" id="allBtn" type="button">View all</button>
+        </div>
+        <div class="accordion" id="skillsAccordion"></div>
+        <p class="no-results" id="noResults" hidden>No skills matched your search.</p>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Selected work</span>
+          <h2>Featured Projects</h2>
+          <p>Flagship AI systems — tap a card to expand details.</p>
+        </div>
+
+        <div class="projects" id="projectsList">
+          <article class="proj">
+            <button class="proj-head" type="button" aria-expanded="false">
+              <span class="proj-art" style="color:#4f46e5;background:rgba(79,70,229,.12)">
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="7" r="3"/><circle cx="8" cy="25" r="3"/><circle cx="24" cy="25" r="3"/><line x1="16" y1="7" x2="8" y2="25"/><line x1="16" y1="7" x2="24" y2="25"/><line x1="8" y1="25" x2="24" y2="25"/></svg>
+              </span>
+              <span class="proj-headtext">
+                <span class="proj-title">MasterMax</span>
+                <span class="proj-badge" style="color:#4f46e5;background:rgba(79,70,229,.1)">Deep Learning</span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="proj-body"><div class="proj-inner">
+              <p class="proj-desc">A modular deep learning platform for designing, training, and evaluating large-scale neural network systems.</p>
+              <div class="tags"><span>Deep Learning</span><span>PyTorch</span><span>TensorFlow</span><span>MLOps</span></div>
+            </div></div>
           </article>
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon" aria-hidden="true">&#128640;</div>
-              <span class="project-badge">Generative AI</span>
-            </div>
-            <h3>MultiSuper</h3>
-            <p>An ensemble of specialized generative AI models that collaborate to solve complex, multi-step AI problems.</p>
-            <div class="tags"><span>Generative AI</span><span>LLMs</span><span>Ensemble</span><span>Vector DBs</span></div>
+
+          <article class="proj">
+            <button class="proj-head" type="button" aria-expanded="false">
+              <span class="proj-art" style="color:#d97706;background:rgba(217,119,6,.12)">
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l2.4 6.6L24 14l-6.6 2.4L15 23l-2.4-6.6L6 14l6.6-2.4z"/><path d="M24 22l1 2.6 2.6 1-2.6 1-1 2.6-1-2.6-2.6-1 2.6-1z"/></svg>
+              </span>
+              <span class="proj-headtext">
+                <span class="proj-title">MultiSuper</span>
+                <span class="proj-badge" style="color:#d97706;background:rgba(217,119,6,.1)">Generative AI</span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="proj-body"><div class="proj-inner">
+              <p class="proj-desc">An ensemble of specialized generative AI models that collaborate to solve complex, multi-step AI problems.</p>
+              <div class="tags"><span>Generative AI</span><span>LLMs</span><span>Ensemble</span><span>Vector DBs</span></div>
+              <a class="proj-link" href="https://katravathsnug25-cyber.github.io/multisuper-chatbot/" target="_blank" rel="noopener">
+                Live Demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+              </a>
+            </div></div>
           </article>
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon" aria-hidden="true">&#128172;</div>
-              <span class="project-badge">LLM / RAG</span>
-            </div>
-            <h3>AI-Powered Chatbot</h3>
-            <p>A retrieval-augmented conversational AI that grounds intelligent responses in enterprise knowledge.</p>
-            <div class="tags"><span>LLMs</span><span>RAG</span><span>FastAPI</span><span>Embeddings</span><span>Vector DBs</span></div>
+
+          <article class="proj">
+            <button class="proj-head" type="button" aria-expanded="false">
+              <span class="proj-art" style="color:#0891b2;background:rgba(8,145,178,.12)">
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M27 15.5A10.5 10.5 0 0 1 16.5 26c-1.7 0-3.3-.4-4.7-1.1L5 26l1.3-6.1A10.5 10.5 0 1 1 27 15.5z"/></svg>
+              </span>
+              <span class="proj-headtext">
+                <span class="proj-title">AI-Powered Chatbot</span>
+                <span class="proj-badge" style="color:#0891b2;background:rgba(8,145,178,.1)">LLM / RAG</span>
+              </span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="proj-body"><div class="proj-inner">
+              <p class="proj-desc">A retrieval-augmented conversational AI that grounds intelligent responses in enterprise knowledge.</p>
+              <div class="tags"><span>LLMs</span><span>RAG</span><span>FastAPI</span><span>Embeddings</span><span>Vector DBs</span></div>
+            </div></div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Let&rsquo;s build something intelligent.</h2>
+          <p>Open to AI/ML internships, collaborations, and full-time opportunities.</p>
+          <a class="btn btn-primary" href="mailto:hello@katravath.dev">Get in Touch</a>
+          <div class="contact-links">
+            <a href="https://github.com/katravathsnug25-cyber" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+              GitHub
+            </a>
+            <a href="https://katravathsnug25-cyber.github.io/multisuper-chatbot/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+              Live Demo
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer" id="contact">
-    <div class="container">
-      <h2>Let&#8217;s build something intelligent.</h2>
-      <p>Open to AI/ML internships, collaborations, and full-time opportunities.</p>
-      <a class="btn btn-primary" href="mailto:hello@katravath.dev">Get in Touch</a>
-    </div>
-  </footer>
+  <footer class="site-footer">&copy; 2026 Katravath Santosh Naik &middot; Built with plain HTML, CSS &amp; JS.</footer>
+
+  <!-- ===== Bottom navigation (mobile) ===== -->
+  <nav class="bottom-nav" aria-label="Bottom navigation">
+    <a class="bn-item active" href="#home" data-target="home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+      Home
+    </a>
+    <a class="bn-item" href="#skills" data-target="skills">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      Skills
+    </a>
+    <a class="bn-item" href="#projects" data-target="projects">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      Projects
+    </a>
+    <button class="bn-item" id="profileNavBtn" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      Profile
+    </button>
+  </nav>
 
   <script src="app.js"></script>
 </body>
